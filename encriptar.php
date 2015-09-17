@@ -13,4 +13,5 @@
 # -----------------------
 
 require_once './Frame/_base.php';
-echo Sfphp::encrypt("ja9zQUGUSM7Q3fv9","CDD9BCE2F81D711B978AFC7A2ABCD");
+$config = Sfphp_Config::get();
+echo Sfphp::encrypt(trim($_GET['s']),$config['app']['key']);
