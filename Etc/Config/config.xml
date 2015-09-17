@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+	<app>
+		<key>CDD9BCE2F81D711B978AFC7A2ABCD</key>
+		<name>Punto de Venta</name>
+		<company>sincco</company>
+	</app>
+	<front>
+		<url>http://frame.com/</url>
+	</front>
+	<bases>
+		<default>
+			<host>127.0.0.1</host>
+			<user>pos</user>
+			<password>ZigPSowxFNw56bXNXTzZXtK8JfqkNYF91M8BacYNj7Q=</password>
+			<dbname>pos</dbname>
+			<type>mysql</type>
+		</default>
+	</bases>
+	<dev>
+		<log>1</log>
+		<showerrors>1</showerrors>
+		<showphperrors>1</showphperrors>
+	</dev>
+	<sesion>
+		<tipo>DEFAULT</tipo>
+		<nombre>pos</nombre>
+		<ssl>0</ssl>
+		<inactividad>60</inactividad>
+	</sesion>
+</config>
