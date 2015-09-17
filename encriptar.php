@@ -12,5 +12,5 @@
 # Ejecución del framework
 # -----------------------
 
-require_once './Frame/_base.php';
-echo Sfphp::encrypt("ja9zQUGUSM7Q3fv9","CDD9BCE2F81D711B978AFC7A2ABCD");
+require_once './Sfphp/_base.php';
+echo Sfphp::encrypt("SSUaaby4xS67ywQE","CDD9BCE2F81D711B978AFC7A2ABCD");
