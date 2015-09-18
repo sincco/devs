@@ -58,7 +58,7 @@ class Sfphp_Peticion
 		}
 	}
 
-# Activa el método mágico GET para cualquier atributo privado
+# Regresa la peticion
 	public static function get($atributo = '') {
 		if(!self::$_instancia instanceof self)
 			self::$_instancia = new self();
@@ -67,6 +67,16 @@ class Sfphp_Peticion
 			return $_variables[$atributo];
 		else
 			return $_variables;
+	}
+
+# Regresa la peticion
+	public static function parametros($atributo = '') {
+		if(!self::$_instancia instanceof self)
+			self::$_instancia = new self();
+		if(strlen(trim($atributo)))
+			return $_instancia->_parametros[$atributo];
+		else
+			return $_instancia->_parametros;
 	}
 
 # Nombre del atributo a usarse en los __get __set
