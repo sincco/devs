@@ -69,7 +69,7 @@ class Sfphp_Peticion
 			return $_variables;
 	}
 
-# Regresa la peticion
+# Regresa los parametros de la peticion
 	public static function parametros($atributo = '') {
 		if(!self::$_instancia instanceof self)
 			self::$_instancia = new self();
