@@ -69,14 +69,14 @@ class Sfphp_Peticion
 			return $_variables;
 	}
 
-# Regresa los parametros de la peticion
+# Regresa la peticion
 	public static function parametros($atributo = '') {
 		if(!self::$_instancia instanceof self)
 			self::$_instancia = new self();
 		if(strlen(trim($atributo)))
-			return $_instancia->_parametros[$atributo];
+			return self::$_instancia->_parametros[$atributo];
 		else
-			return $_instancia->_parametros;
+			return self::$_instancia->_parametros;
 	}
 
 # Nombre del atributo a usarse en los __get __set
