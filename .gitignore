@@ -2,4 +2,5 @@
 /App
 /Etc
 /html
-README.md
+*.md
+*.md5
