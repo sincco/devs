@@ -78,7 +78,10 @@ if(!file_exists("./Etc/Config/config.xml")) {
 		),
 	);
 	if(Sfphp_Disco::arregloXML($_config,"config","./Etc/Config/config.xml"))
+	{
+		chmod("./Etc/Config/config.xml", "774")
 		echo 'Configuración básica completa.';
+	}
 	else
 		echo 'Hubo un error al escribir la configuración.';
 } else {
