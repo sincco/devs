@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+	<app>
+		<key>46BB2657B10D6307E8570232A6EFD327</key>
+		<name>SAE Extended</name>
+		<company>sincco</company>
+	</app>
+	<front>
+		<url>http://54.186.120.251/sae/</url>
+	</front>
+	<bases>
+		<default>
+			<host>/var/www/html/sae/</host>
+			<user>sysdba</user>
+			<password>OFqGor4uSAP6UwWXEM7Sro+lXha2RqBNUlm0yEqcq5Q=</password>
+			<dbname>SAE60EMPRE01.FDB</dbname>
+			<type>firebird</type>
+		</default>
+	</bases>
+	<dev>
+		<log>1</log>
+		<showerrors>1</showerrors>
+		<showphperrors>1</showphperrors>
+	</dev>
+	<sesion>
+		<tipo>DEFAULT</tipo>
+		<nombre>sae</nombre>
+		<ssl>0</ssl>
+		<inactividad>60</inactividad>
+	</sesion>
+</config>
