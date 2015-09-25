@@ -38,7 +38,7 @@ final class Sfphp_Sesion
     #Configura los parámetros
         session_set_cookie_params($cookieParams["lifetime"], $cookieParams["path"], $cookieParams["domain"], $config['ssl'], true); 
         #session_save_path(str_replace("Frame", "Etc/Sesiones", realpath(dirname(__FILE__))));
-        session_save_path('../Etc/Sesiones');
+        session_save_path('/var/www/html/sae/Etc/Sesiones');
     #Definir el tipo de manejador de las sesiones
     	if(strtoupper(trim($config['tipo'])) == "FILE")
 			session_set_save_handler(new Sfphp_SesionFile(), true);
