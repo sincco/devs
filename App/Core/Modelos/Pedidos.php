@@ -12,7 +12,7 @@ class Modelos_Pedidos extends Sfphp_Modelo
 			INNER JOIN CLIE01 CTE ON CTE.CLAVE = FAC.CVE_CLPV
 			WHERE FAC.STATUS = 'E' AND 
 				FAC.TIP_DOC_SIG IS NULL AND 
-				FAC.FECHA_DOC >= '01-01-2015';
+				FAC.FECHA_DOC >= '01-08-2015';
 		";
 		$where = NULL;
 		return $this->db->query($query);
