@@ -12,7 +12,7 @@
 # Ejecución del framework
 # -----------------------
 
-ini_set('memory_limit', '512MB');
+ini_set('memory_limit', '576MB');
 require_once './Sfphp/_base.php';
 # Carga de configuración de la app
 Sfphp_Config::get();
