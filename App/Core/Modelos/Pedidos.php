@@ -15,7 +15,6 @@ class Modelos_Pedidos extends Sfphp_Modelo
 			INNER JOIN INVE01 I ON I.CVE_ART = PF.CVE_ART
 			WHERE FAC.STATUS = 'E' AND FAC.TIP_DOC_SIG IS NULL AND FAC.FECHA_DOC >= '01-01-2015';
 		";
-		$query = "SELECT * FROM FACTP01;";
 		$where = NULL;
 		return $this->db->query($query);
 	}
