@@ -5,6 +5,7 @@ class Controladores_Pedidos extends Sfphp_Controlador
 	{
 		#$this->_vista->pedidos = 
 		echo json_encode($this->modeloPedidos->get());
+		echo "ERROR".json_last_error();
 		$this->vistaPedidos;
 	}
 }
