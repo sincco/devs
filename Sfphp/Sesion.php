@@ -1,4 +1,23 @@
 <?php
+# 
+# -/:::::::::::::::::::/- `/soooooooooooooooooooy: ./::::::::::::::::::://`                                                                             
+# +:-------------------:+.-ho+/////////////////+sh.:/:------------------:*                                                                             
+# +////:::::::::::::////+--hyyyssooooooooooossyyyh-+/////:::::::::::::////+                                                                             
+# +/////////////////////+--hyyyyyyyyyyyyyyyyyyyyyh-+//////////////////////+                                                                             
+# +/////////////////////+-.hyyyyyyyyyyyyyyyyyyyyyh-+//////////////////////+                                                                             
+# +/////////////////////+--hyyyyyyyyyyyyyyyyyyyyyh-+//////////////////////+                                                                             
+# +/////////////////////+.-hyyyyyyyyyyyyyyyyyyyyyh.//////////////////////+:                                                                             
+# :///////////////////+/. `ohyyyyyyyyyyyyyyyyyyhh/ `////////////////////+:`                                                                             
+#  .-------------------.    --------------------.   ```.------.``````````                            .......`           `......            `......`     
+# +o+++++++++++++++++++so `:::::::::::::::::::::/-   -syhhyyyhyss-    sssss  ysssss+`    +sssy.  `:+shhyyyyhyy/-    `-ssyhyyyyhsy+`    `/osyhyyyyhys/.  
+# hs++///////////////++sh:.+::-----------------:/+`-syyyhyyyyyyyyy+   yyyyh  dyyyyyys.   oyyyh.`:yyyyyyyyyyyyyyho` /hyyyyyyyyyyyyyy+  +hyyyyhyyyyyyyyyo.
+# hyyyssssooooooossssyyyh/`+//////::::::::://////+`/hyyyd/-```ohyyh:  yyyyh  dyyyhyyyh:  oyyyh./hyyyy+`   `-hyyyh/.hyyyhs.    /yyyyho-hyyyho-   .-syyyyy
+# hyyyyyyyyyyyyyyyyyyyyyh/`+/////////////////////+`-yyyyyyyyyyhss+:   yyyyh  dyyyhsyyyhh`oyyyh-oyyyh:       `----`yyyyys        ----.oyyyyo       `yyyyh
+# hyyyyyyyyyyyyyyyyyyyyyh/`+/////////////////////+```/oshyyyyyyyyyho  yyyyh  dyyyy +hyyyhhyyyh-yyyyy/       .:::::hyyyys       `::::-oyyyys       -yyyyh
+# hyyyyyyyyyyyyyyyyyyyyyh/`+/////////////////////+.yhyyds`  .:ohyyyd` yyyyh  dyyyy  `yyyyhyyyh./hyyyho.   ./syyyh/.hyyyh+-   `:yyyyh/.hyyyy+:    /yyyyys
+# hyyyyyyyyyyyyyyyyyyyyyy-.+/////////////////////+`-yyyyyhyoyhhyyyh:  yyyyh  dyyyy    +hyyyyyh. +hyyyyyhhhyyyyyh+  -hyyyyyhhhyyyyyy/  :yhyyyyhhhyyyyyy+`
+# +hhyyyyyyhhhhhhhhhhhhd-  -+++++++++++++++++++++.   /ohhyyyyyhhoo.   hhhhh  dhhhy     -shhhhd.   .syhhhyyhhyo:`     :+shhhyyhhho/      -/ohhhyyhhdo:`  
+# 
 # NOTICE OF LICENSE
 #
 # This source file is subject to the Open Software License (OSL 3.0)
@@ -52,6 +71,11 @@ final class Sfphp_Sesion
         $_SESSION['__token'] = md5(Sfphp::tokenCliente());
 	}
 
+    /**
+     * metodo magico para regreso de variables de sesion
+     * @param  string $variable la variable de sesion a devolver
+     * @return mixed           
+     */
 	public static function get($variable = '')
 	{
 		if(!self::$instancia instanceof self)
@@ -62,13 +86,21 @@ final class Sfphp_Sesion
             return $_SESSION;
 	}
 
+    /**
+     * metodo magico para agregar variables a la sesion
+     * @param string $variable la variable de sesion a agregar
+     * @param mixed $valor    el contenido de la variable
+     */
     public function set($variable, $valor)
     {
         if(!self::$instancia instanceof self)
             self::$instancia = new self();
         $_SESSION[$variable] = $valor;
     }
-
+    /**
+     * devuelve el id de la sesion
+     * @return string el identificador
+     */
     public function id()
     {
         if(!self::$instancia instanceof self)
