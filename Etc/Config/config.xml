@@ -6,7 +6,7 @@
 		<company>sincco</company>
 	</app>
 	<front>
-		<url>http://54.186.120.251/sae/</url>
+		<url>http://127.0.0.1/sae/</url>
 	</front>
 	<bases>
 		<default>

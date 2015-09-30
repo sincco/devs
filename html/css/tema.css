@@ -1,20 +1,50 @@
-#footer {
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+html {
+  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+}
+.navbar-default {
+  background-color: #273b47;
+  border-color: #888;
+}
+.navbar-default .navbar-brand {
+  color:#fff;
+}
+.navbar-default .navbar-nav > li > a {
+  color:#fff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #F00;
+  color:#fff;
+}
+.navbar-default .navbar-nav > li.dropdown.open > a:hover {
+  background-color: #F00;
+  color:#fff;
+}
+.navbar-default .navbar-nav > li.dropdown.open > a {
+  background-color: #F00;
+  color:#fff;
+}
+.Footer {
   background: none repeat scroll 0 0 #000;
-  border-top: 5px solid #FF9900;
-  height: 120px;
-  margin-top: 30px;
+  border-top: 0.5em solid #f90;
+  margin-top: 3em;
   color: #fff;
-  padding-top: 20px;
+  padding-top: 1em;
 }
-
-#footer a {
-	color: #FF9900;
+.Footer-image {
+  max-width: 100%;
 }
-
-.container {
-	padding-top: 60px;
+.Footer-link {
+  color: #f90;
 }
-
-img {
-	max-width: 100%;
+.Footer-container {
+  padding-top: 60px;
 }

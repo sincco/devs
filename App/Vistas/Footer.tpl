@@ -1,5 +1,5 @@
     <br><br><br><br>
-    <footer id="footer" class="wow fadeInUp">
+    <footer class="wow fadeInUp footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">

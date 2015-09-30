@@ -12,6 +12,8 @@
     <link href="{BASE_URL}html/css/bootstrap.css" rel="stylesheet">
     <link href="{BASE_URL}html/fontawesome/css/font-awesome.css" rel="stylesheet">
     <link href="{BASE_URL}html/css/animate.css" rel="stylesheet">
+
+    <!-- estilo específico de la app -->
     <link href="{BASE_URL}html/css/tema.css" rel="stylesheet">
 
     

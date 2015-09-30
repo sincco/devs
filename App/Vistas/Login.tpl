@@ -1,3 +1,4 @@
+<incluir archivo="Header">
 <header class="wow fadeInLeft">
 	<div class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
