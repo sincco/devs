@@ -36,6 +36,7 @@ final class Sfphp_Sesion
     	if($cookieParams["lifetime"] == 0)
         	$cookieParams["lifetime"] = 28800; #Se mantiene una sesion activa hasta por 8 horas en el navegador
     #Configura los parámetros
+        $config = Sfphp_Config::get();
         session_set_cookie_params($cookieParams["lifetime"], $cookieParams["path"], $cookieParams["domain"], $config['ssl'], true); 
         session_save_path($config['sesion']['ruta']);
         #session_save_path('/var/www/html/sae/Etc/Sesiones');
