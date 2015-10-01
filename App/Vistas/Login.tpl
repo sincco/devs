@@ -28,6 +28,18 @@
         </div>
     </div>
 </header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="{BASE_URL}html/img/logo.jpg">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1>{APP_NAME}</h1>
+            <p class="lead">Debes tener una cuenta para accesar al sistema</p>
+        </div>
+    </div>
+</div>
+<!--
 <script>
 function accesar() {
 	$.ajax({
@@ -48,3 +60,4 @@ function accesar() {
 	})
 }
 </script>
+-->

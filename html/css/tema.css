@@ -21,19 +21,22 @@ body {
   color:#fff;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #F00;
+  background-color: #29546d;
   color:#fff;
 }
 .navbar-default .navbar-nav > li.dropdown.open > a:hover {
-  background-color: #F00;
+  background-color: #29546d;
   color:#fff;
 }
 .navbar-default .navbar-nav > li.dropdown.open > a {
-  background-color: #F00;
+  background-color: #29546d;
   color:#fff;
 }
 .bootstrap-table {
   font-size: .8em;
+}
+.container {
+  padding-top: 54px;
 }
 .Footer {
   background: none repeat scroll 0 0 #000;
