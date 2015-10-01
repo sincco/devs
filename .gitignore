@@ -1,7 +1,6 @@
 #Exlcluir la APP de prueba
-/App
-/Etc
-/html
+Etc/Logs/*
+Etc/Sesiones/*
 *.md
 *.md5
 *.FDB
