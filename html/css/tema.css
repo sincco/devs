@@ -32,6 +32,9 @@ body {
   background-color: #F00;
   color:#fff;
 }
+.bootstrap-table {
+  font-size: .8em;
+}
 .Footer {
   background: none repeat scroll 0 0 #000;
   border-top: 0.5em solid #f90;
