@@ -37,8 +37,8 @@ final class Sfphp_Sesion
         	$cookieParams["lifetime"] = 28800; #Se mantiene una sesion activa hasta por 8 horas en el navegador
     #Configura los parámetros
         session_set_cookie_params($cookieParams["lifetime"], $cookieParams["path"], $cookieParams["domain"], $config['ssl'], true); 
-        #session_save_path(str_replace("Frame", "Etc/Sesiones", realpath(dirname(__FILE__))));
-        session_save_path('/var/www/html/sae/Etc/Sesiones');
+        session_save_path($config['sesion']['ruta']);
+        #session_save_path('/var/www/html/sae/Etc/Sesiones');
     #Definir el tipo de manejador de las sesiones
     	if(strtoupper(trim($config['tipo'])) == "FILE")
 			session_set_save_handler(new Sfphp_SesionFile(), true);

@@ -27,5 +27,6 @@
 		<nombre>ventaruta</nombre>
 		<ssl>0</ssl>
 		<inactividad>60</inactividad>
+		<ruta>/var/www/htm/sae/Etc/Sesiones</ruta>
 	</sesion>
 </config>
